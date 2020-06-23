@@ -24,10 +24,10 @@ is recommended to you for better understanding of how the framework works.
 
 ### Task #1: Make it work (50 pts)
 Captcha Recognition is similar to MNIST Recognition. 
-It takes a captcha as its input, and tell what numbers it contains. 
+It takes a captcha as its input, and tells what numbers it contains. 
 To simplify the task, the captcha contains exactly 4 twisty digits. 
 Check `captcha/data` folder to see the inputs. 
-The following figure is an example whose answer is `1164`.
+The following figure is an example where the answer is `1164`.
 
 ![Sample](doc/captcha_data_0.png)
 
@@ -42,13 +42,13 @@ other parameters to be placed there.
 
 ![Model](doc/model.png)
 
-Take the first `Conv2D` for example, for Input, the height of image is 56, 
-the width of the image is 156 and the number of channels is 3. 
+Take the first `Conv2D` for example, for Input, the height of image is 60, 
+the width of the image is 160 and the number of channels is 3. 
 They are the original size of images we feed into the network. 
-The output size is $56$ in height, $156$ in width and $32$ channels,
+The output size is 56 in height, 156 in width and 32 channels,
 because we use 32 kernels/filters. 
-The kernel size is $5\times5$. 
-(Why the kernel size is $5\times5$? 
+The kernel size is $5\times 5$. 
+(Why the kernel size is $5\times 5$? 
 Refer to [this link](http://cs231n.github.io/convolutional-networks/#conv) for explanation.)
 
 The TA has also generously coded the training and evaluation process in `src/main.py`.
@@ -68,7 +68,7 @@ In this task, you are going to design your own network and try different paramet
 
 In the lower part of `models.py`, you can see an empty `AdvancedModel` class with empty implementation and a `TODO` mark.
 Your can either copy the base model above and modify it, or create a brand new model by yourself.
-You may learn ResNet, VGG or other famous networks in vision online and implement it, and see which is better.
+You may learn ResNet, VGG or other famous networks in computer vision online and implement it, and see which is better.
 
 You may also modify the training parameters, optimizer or even training method in `main.py`. However, if you do so, please duplicate `main.py` to `main_advance.py` and modify the copy, so that the TA can better recognize what efforts you have done.
 
