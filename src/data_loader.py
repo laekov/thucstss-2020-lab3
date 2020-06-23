@@ -5,6 +5,10 @@ import numpy as np
 from specs import WIDTH, HEIGHT, CHANNEL
 
 
+seed = 7
+np.random.seed(seed)
+
+
 def one_hot_encode (label) :
     return np_utils.to_categorical(np.int32(list(label)), 10)
 
