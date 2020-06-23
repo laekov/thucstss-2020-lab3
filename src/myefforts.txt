@@ -1,0 +1,17 @@
+Name: Harry Chen
+Task 1 accuracy: 1.01
+Task 1 model file name: model1
+Task 2 accuracy: 0.0
+Task 2 model file name: model2
+
+My efforts for task 1:
+
+I set up the cloud environment for all students.
+
+My efforts for task 2:
+
+It is too easy and I do not want to work on it.
+
+Extra comments:
+
+Prof.Chen is sooooo handsome!

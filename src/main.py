@@ -1,6 +1,7 @@
 import argparse
 import tensorflow as tf
 import time
+import sys
 
 
 from data_loader import load_data
@@ -54,14 +55,21 @@ def main():
 
     if not args.eval:
         model.fit(x_train, y_train, epochs=args.epochs)
-    model.evaluate(x_test,  y_test, verbose=2)
+    loss, acc = model.evaluate(x_test,  y_test, verbose=2)
 
     if args.save == 'auto':
         args.save = 'ckpt/model-{}-at-{}'.format(args.model, 
                 time.strftime('%y%m%d-%H%M%S'))
 
     if args.save != 'none' and not args.eval:
+        print('Your model is saved to {}'.format(args.save))
         model.save_weights(args.save)
+
+    if args.save != 'none':
+        with open('{}.report'.format(args.save), 'w') as f:
+            f.write('{}\n'.format(' '.join(sys.argv)))
+            f.write('loss={}\nacc={}'.format(loss, acc))
+
 
 if __name__ == '__main__':
     main()

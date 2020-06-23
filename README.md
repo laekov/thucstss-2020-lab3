@@ -80,8 +80,9 @@ $$
 
 ### Submission guideline
 
-Please submit a `README` text file to describe what efforts you have made to finish the tasks. Please also report your accuracy in the file. 
+Please fill in the text file `src/myefforts.txt` to describe what efforts you have made to finish the tasks. Please also report your accuracy in the file. 
 
-You need also submit all your code and the final model you use for evaluation. You can find your checkpoints in `src/ckpt` directory by default. There are typically one `.index` and several `.data*` files with the same prefix as a checkpoint.
+You need also submit all your code and the final model you use for evaluation. You can find your checkpoints in `src/ckpt` directory by default. 
+There are typically one `.index` and several `.data*` files with the same prefix as a checkpoint.
 
-Please only submit your final model and __do not include the training data in your submission__. 
+For submission, all you need to do is to leave your final files in `~/work/captcha` on your node in cloud.
