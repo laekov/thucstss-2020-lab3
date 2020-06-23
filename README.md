@@ -5,7 +5,7 @@ Tsinghua Deep Learning Summer School 2020
 
 ### Background: Keras
 
-Keras is a high-level deep learning interface runs top of [TensorFlow](https://www.tensorflow.org/). 
+Keras is a high-level deep learning interface running on top of [TensorFlow](https://www.tensorflow.org/). 
 It allows easier and faster prototyping than core TensorFlow, 
 friendly to students to turn ideas into code.
 
