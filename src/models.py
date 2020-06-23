@@ -15,8 +15,10 @@ class BaseCNNModel(Model):
                 input_shape=(HEIGHT, WIDTH, CHANNEL), activation='relu'),
             MaxPooling2D(pool_size=(2, 2)),
             Dropout(0.5),
+
             # TODO for task #1: Add a convolution layer here
             # TODO for task #1: Add another pooling layer here
+
             Dropout(0.15),
             Conv2D(32, (3, 3), activation='relu'),
             AveragePooling2D(pool_size=(2, 2)),
