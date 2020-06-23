@@ -1,15 +1,11 @@
 import PIL
 import os
 import numpy as np
-import random
+import pickle
 from tensorflow.keras.utils import to_categorical
 
 
 from specs import WIDTH, HEIGHT, CHANNEL
-
-
-seed = 7
-np.random.seed(seed)
 
 
 def one_hot_encode(label) :
@@ -17,6 +13,10 @@ def one_hot_encode(label) :
 
 
 def load_data(path, train_ratio):
+    cache_file = os.path.join(path, 'cache_data.pkl')
+    if os.path.exists(cache_file):
+        with open(cache_file, 'rb') as f:
+            return pickle.load(f)
     datas = []
     labels = []
 
@@ -31,7 +31,6 @@ def load_data(path, train_ratio):
             labels.append(one_hot_encode(line.strip()))
 
     datas_labels = list(zip(datas, labels))
-    random.shuffle(datas_labels)
     datas, labels = list(zip(*datas_labels))
 
     size = len(labels)
@@ -41,6 +40,9 @@ def load_data(path, train_ratio):
     test_datas = np.stack(datas[train_size:size])
     train_labels = np.stack(labels[0:train_size])
     test_labels = np.stack(labels[train_size:size])
+
+    with open(cache_file, 'wb') as f:
+        pickle.dump((train_datas, train_labels, test_datas, test_labels), f)
 
     return train_datas, train_labels, test_datas, test_labels
 
