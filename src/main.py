@@ -60,7 +60,7 @@ def main():
         args.save = 'ckpt/model-{}-at-{}'.format(args.model, 
                 time.strftime('%y%m%d-%H%M%S'))
 
-    if args.save != 'none':
+    if args.save != 'none' and not args.eval:
         model.save_weights(args.save)
 
 if __name__ == '__main__':
