@@ -18,7 +18,7 @@ There are many types of activation functions, such as softmax, relu, tanh, etc.
 The picture above shows some layers provided by Keras. 
 It is quite easy to understand a layer's function via its name.
 
-Keras with a stable version of TensorFlow (`v1.5.0`) has already been installed in your environment. 
+Keras with a stable version of TensorFlow (`v1.15.0`) has already been installed in your environment. 
 
 ### Task #1: Make it work (50 pts)
 
