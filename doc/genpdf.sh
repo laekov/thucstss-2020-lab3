@@ -1,7 +1,7 @@
 #!/bin/bash
-pandoc README.md \
-	--include-in-header doc/chapter_break.tex \
-	--include-in-header doc/highlight.tex \
+pandoc lab2_instructions.md \
+	--include-in-header chapter_break.tex \
+	--include-in-header highlight.tex \
 	-V linkcolor:blue \
 	-V geometry:a4paper \
 	-V geometry:margin=2cm \
