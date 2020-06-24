@@ -1,7 +1,9 @@
 import argparse
-import tensorflow as tf
 import time
 import sys
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '4'
+import tensorflow as tf
 
 
 from data_loader import load_data
@@ -32,6 +34,8 @@ def accuracy(test_labels, predict_labels):
 
 
 def main():
+    tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.FATAL)
+
     gpus = tf.config.experimental.list_physical_devices('GPU')
 
     if len(gpus) == 0:

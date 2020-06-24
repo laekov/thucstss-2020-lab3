@@ -52,11 +52,11 @@ The kernel size is $5\times 5$.
 Refer to [this link](http://cs231n.github.io/convolutional-networks/#conv) for explanation.)
 
 The TA has also generously coded the training and evaluation process in `src/main.py`.
-By default, directly run `python main.py` in `src` directory will work 
+By default, directly run `python3 main.py` in `src` directory will work 
 when you have your environment properly set up and filled in the blanks correctly.
 Other functions like loading/saving a model, training different number of epochs or
 running evaluation on a specific model are also provided by the script.
-You can run `python main.py --help` or look up the script for details.
+You can run `python3 main.py --help` or look up the script for details.
 
 Note that you are __only allowed to modify__ `models.py` in this task.
 You may add debug code anywhere, but please remove them in your final submission.
