@@ -18,11 +18,10 @@ There are many types of activation functions, such as softmax, relu, tanh, etc.
 The picture above shows some layers provided by Keras. 
 It is quite easy to understand a layer's function via its name.
 
-Keras with the latest TensorFlow (`v2.2.0`) has already been installed in your environment. 
-[The tutorial to TensorFlow 2.0](https://www.tensorflow.org/tutorials/quickstart/beginner)
-is recommended to you for better understanding of how the framework works.
+Keras with a stable version of TensorFlow (`v1.5.0`) has already been installed in your environment. 
 
 ### Task #1: Make it work (50 pts)
+
 Captcha Recognition is similar to MNIST Recognition. 
 It takes a captcha as its input, and tells what numbers it contains. 
 To simplify the task, the captcha contains exactly 4 twisty digits. 
@@ -61,14 +60,18 @@ You can run `python3 main.py --help` or look up the script for details.
 Note that you are __only allowed to modify__ `models.py` in this task.
 You may add debug code anywhere, but please remove them in your final submission.
 
+#### Hint
+
+The code can run without any modification, while the accuracy can only reach $0.85$. 
+If you correctly added the layers, the accuracy typically go over $0.9$.
+
 ### Task #2: Better accuracy (50pts)
 
 In the previous task, you finished a basic convolutional neural network to recognize captcha, but it is far not accurate enough. 
 In this task, you are going to design your own network and try different parameters to make the accuracy as high as possible.
 
-In the lower part of `models.py`, you can see an empty `AdvancedModel` class with empty implementation and a `TODO` mark.
+In the lower part of `models.py`, you can see `AdvancedModel` class with empty implementation and a `TODO` mark.
 Your can either copy the base model above and modify it, or create a brand new model by yourself.
-You may learn ResNet, VGG or other famous networks in computer vision online and implement it, and see which is better.
 
 You may also modify the training parameters, optimizer or even training method in `main.py`. However, if you do so, please duplicate `main.py` to `main_advance.py` and modify the copy, so that the TA can better recognize what efforts you have done.
 
@@ -78,11 +81,20 @@ $$
     \text{score} = \left(\frac{\text{Your acc} - \text{baseline}(88\%)}{\text{Max acc among all students} - \text{baseline}(88\%)}\right)^{1.5} \times 50
 $$
 
+#### Hint
+
+You can try adding some more convolution layers, tuning dropout rate and kernel sizes.
+You may also learn LeNet, GoogLeNet, VGG, ResNet and other famous networks in computer vision online and implement it.
+
 ### Submission guideline
 
-Please fill in the text file `src/myefforts.txt` to describe what efforts you have made to finish the tasks. Please also report your accuracy in the file. 
+Please write a brief report using the template of `src/myefforts.txt`. 
+Report your accuracy and describe what efforts you have made to finish the tasks in the text. 
 
-You need also submit all your code and the final model you use for evaluation. You can find your checkpoints in `src/ckpt` directory by default. 
-There are typically one `.index` and several `.data*` files with the same prefix as a checkpoint.
+You should submit all your code and the final model you use for evaluation. 
+The TA will inspect your code and model, so please __do not remove__ the model files refered by your report.
+You can find your models in `src/ckpt` directory by default. 
+There are typically one `.index` and several `.data*` files with the same prefix as one result of training.
 
 For submission, all you need to do is to leave your final files in `~/work/captcha` on your node in cloud.
+If you are using jupyter, do not forget to copy your code back to the `.py` files and make sure that they can run.
