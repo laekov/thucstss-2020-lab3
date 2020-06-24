@@ -1,17 +1,17 @@
-Name: Harry Chen
-Task 1 accuracy: 0.9999999999
-Task 1 model file name: model1
-Task 2 accuracy: 0.000000000001
-Task 2 model file name: model2
+Name:                          Harry Chen    <Replace with your name>
+Task 1 accuracy:               0.9999999999  <Replace with your data>
+Task 1 model file name:        model1        <Replace with your data>
+Task 2 accuracy:               0.00000000001 <Replace with your data>
+Task 2 model file name:        model2        <Replace with your data>
 
 My efforts for task 1:
 
-I set up the cloud environment for all students.
+I set up the cloud environment for all students.     <Replace with your words>
 
 My efforts for task 2:
 
-It is too easy and I do not want to work on it.
+It is too easy and I do not want to work on it.      <Replace with your words>
 
 Extra comments:
 
-Prof.Chen is sooooo handsome!
+Prof.Chen is sooooo handsome!                        <Replace with your words>
