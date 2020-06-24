@@ -1,7 +1,7 @@
 Name: Harry Chen
-Task 1 accuracy: 1.01
+Task 1 accuracy: 0.9999999999
 Task 1 model file name: model1
-Task 2 accuracy: 0.0
+Task 2 accuracy: 0.000000000001
 Task 2 model file name: model2
 
 My efforts for task 1:
