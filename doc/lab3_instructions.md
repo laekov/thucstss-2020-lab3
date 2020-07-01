@@ -115,7 +115,7 @@ For submission, all you need to do is to leave your final files in `~/work/captc
 If you are using jupyter, do not forget to copy your code back to the `.py` files and make sure that they can run.
 
 ### Deadline
-The deadline of this lab is __`02 July, 7:00 PM, CST`__.
+The deadline of this lab is __`02 July, 7:00 PM, UTC+8`__.
 
 ### Late submission
 You can request for a late submission by sending an E-mail to the TA.
@@ -124,9 +124,8 @@ The penalty is based on the number of hours $h$ you are behind the deadline
 according to the timestamp of your E-mail.
 The calculation is shown below.
 $$ 
-	\text{score} -= \text{min}(40, \lceil\frac{h}{5} \rceil) 
+	\text{score}^{-} = \text{min}(100, \lceil exp((\frac{h}{5})^2) \rceil) 
 $$
-Which means every 5 hours equals to 1 point for late submission.
 
 ## Contact information
 TA: Rick (Jiaao) Ho, E-mail: hja16 [at] tsinghua.org.cn
