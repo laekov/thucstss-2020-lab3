@@ -1,5 +1,5 @@
 #!/bin/bash
-pandoc lab2_instructions.md \
+pandoc lab3_instructions.md \
 	--include-in-header chapter_break.tex \
 	--include-in-header highlight.tex \
 	-V linkcolor:blue \
@@ -8,4 +8,4 @@ pandoc lab2_instructions.md \
 	-V mainfont="DejaVu Serif" \
 	-V monofont="DejaVu Sans Mono" \
 	--pdf-engine=xelatex \
-	-o lab2_instructions.pdf
+	-o lab3_instructions.pdf

@@ -1,8 +1,8 @@
-Lab 2: Captcha Recognition
+Lab 3: Captcha Recognition
 ===
 Tsinghua DL Summer School 2020 
 
-Instructions are in `doc/lab2_instruction.md`.
+Instructions are in `doc/lab3_instruction.md`.
 
 Source codes are in `src`.
 
