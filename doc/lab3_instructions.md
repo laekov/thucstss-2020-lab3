@@ -118,14 +118,19 @@ If you are using jupyter, do not forget to copy your code back to the `.py` file
 The deadline of this lab is __`02 July, 7:00 PM, UTC+8`__.
 
 ### Late submission
-You can request for a late submission by sending an E-mail to the TA.
-A penalty will be applied to your score to the lab if you submit late.
+You can request for a late submission by sending an E-mail to the TA when you finish the lab.
+The TA accepts late submission until `09 July, 7:00 PM, UTC+8`.
+
+A penalty will be applied to your score of the lab if you submit late.
 The penalty is based on the number of hours $h$ you are behind the deadline 
 according to the timestamp of your E-mail.
 The calculation is shown below.
 $$ 
-	\text{score}^{-} = \text{min}(100, \lceil exp((\frac{h}{5})^2) \rceil) 
+	\text{\% score off} = \text{min}(80, \lceil exp((\frac{h}{12})^2) \rceil) 
 $$
+
+If you are unsatisfied with your result already submitted,
+you can also re-submit it, which will be treated the same as a late submission.
 
 ## Contact information
 TA: Rick (Jiaao) Ho, E-mail: hja16 [at] tsinghua.org.cn
