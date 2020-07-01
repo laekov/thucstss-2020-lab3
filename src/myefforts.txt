@@ -1,17 +1,18 @@
-Name:                          Harry Chen    <Replace with your name>
-Task 1 accuracy:               0.9999999999  <Replace with your data>
-Task 1 model file name:        model1        <Replace with your data>
-Task 2 accuracy:               0.00000000001 <Replace with your data>
-Task 2 model file name:        model2        <Replace with your data>
+Name:                          Harry Chen    <TODO, replace with your name>
+Tsinghua ID:                   2020xxyyyy    <TODO, replace with your ID>
+Task 1 accuracy:               0.9999999999  <TODO, replace with your data>
+Task 1 model file name:        model1        <TODO, replace with your data>
+Task 2 accuracy:               0.00000000001 <TODO, replace with your data>
+Task 2 model file name:        model2        <TODO, replace with your data>
 
 My efforts for task 1:
 
-I set up the cloud environment for all students.     <Replace with your words>
+I set up the cloud environment for all students. <TODO, replace with your words>
 
 My efforts for task 2:
 
-It is too easy and I do not want to work on it.      <Replace with your words>
+It is too easy and I do not want to work on it.  <TODO, replace with your words>
 
 Extra comments:
 
-Prof.Chen is sooooo handsome!                        <Replace with your words>
+Prof.Chen is sooooo handsome!                    <TODO, replace with your words>
