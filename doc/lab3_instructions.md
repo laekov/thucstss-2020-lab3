@@ -126,7 +126,7 @@ The penalty is based on the number of hours $h$ you are behind the deadline
 according to the timestamp of your E-mail.
 The calculation is shown below.
 $$ 
-	\text{\% score off} = \text{min}(80, \lceil exp((\frac{h}{12})^2) \rceil) 
+	\text{\% score off} = \text{min}(80, exp((\frac{h}{12})^2)) 
 $$
 
 If you are unsatisfied with your result already submitted,
